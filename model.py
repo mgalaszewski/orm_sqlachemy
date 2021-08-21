@@ -20,6 +20,7 @@ class Domains(Base):
 
     def __init__(self, create_date, name, values, is_active):
         self.create_date = create_date
+        self.update_date = datetime.now()
         self.name = name
         self.values = values
         self.is_active = is_active
